@@ -2,11 +2,11 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/book-store</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">dev123</property>
+    	 <property name="hibernate.connection.url">jdbc:postgresql://ec2-107-21-126-162.compute-1.amazonaws.com:6232/dbname?username=username&amp;password=password&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</property>
+         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+         <property name="hibernate.connection.username">username</property>
+         <property name="hibernate.connection.password">password</property>
+         <property name="hibernate.archive.autodetection">class</property> 	
 
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
